@@ -3,8 +3,8 @@ name: Run Login Script
 on:
   workflow_dispatch:
   schedule:
-    # 每年每月8号和25号的早上6点28分执行一次任务
-    - cron: "21 7 4,25 * *"  # "0 0 */3 * *" 每三天运行一次，可以根据需求调整时间
+    # 每年每月4号和23号的早上6点28分执行一次任务
+    - cron: "28 7 4,23 * *"  # "0 0 */3 * *" 每三天运行一次，可以根据需求调整时间
   push:
     branches:
       - main
